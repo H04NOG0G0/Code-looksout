@@ -26,6 +26,9 @@ a {
   align-items: center;
   gap: 70px;
 }
+.header-left img {
+  cursor: pointer;
+}
 .header-left ul {
   display: flex;
   gap: 32px;
