@@ -1,0 +1,256 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+:root {
+  --Text-color: rgba(39, 45, 55, 1);
+  --bg_blue_same-color: rgba(67, 126, 247, 1);
+}
+a {
+  color: var(--Text-color);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 0;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.header-left ul {
+  display: flex;
+  gap: 32px;
+}
+.header-left-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Text-color);
+}
+.button-blue-same,
+.button-signup {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button-blue-same {
+  background-color: var(--bg_blue_same-color);
+  color: white;
+}
+.button-signup {
+  background-color: white;
+  margin-right: 24px;
+  color: var(--bg_blue_same-color);
+}
+.button-bars {
+  font-size: 15px;
+}
+.divide-content {
+  border-top: 1px solid gray;
+}
+.banner {
+  text-align: center;
+}
+.banner h2 {
+  font-size: 5.2rem;
+  font-weight: bold;
+}
+.banner p {
+  font-size: 1.8rem;
+  margin: 24px 0 36px;
+  font-weight: 400;
+  color: #5f6d7e;
+}
+/* .banner {
+  line-height: 60px;
+} */
+.imgi {
+  width: 100%;
+}
+.banner {
+  margin: 48px;
+}
+.button-content {
+  gap: 16px;
+}
+.button-content button {
+  border: 1px solid #272d37;
+}
+.Heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+.descrip {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 0px 64px 0px;
+  text-align: center;
+  color: #5f6d7e;
+}
+.Small-channel-box {
+  border: 1px solid #eaebf0;
+  padding: 24px 32px;
+  border-radius: 5px;
+}
+.box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-top i {
+  font-size: 32px;
+  padding: 12px;
+  color: var(--bg_blue_same-color);
+  border: 0px solid #f5faff;
+  border-radius: 30px;
+}
+.box-top button {
+  cursor: pointer;
+}
+.box-bottom {
+  padding-top: 24px;
+}
+.box-bottom h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.box-bottom p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5f6d7e;
+}
+.row button {
+  margin-top: 52px;
+  margin-bottom: 64px;
+}
+.Feature-content {
+  display: flex;
+  max-width: 1280px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 140px;
+  margin-bottom: 64px;
+}
+.Feature-content-left {
+  width: 70%;
+}
+.Feature-content-right {
+  width: 30%;
+  margin-left: 140px;
+}
+.Feature-content-right button {
+  margin-top: 40px;
+}
+.blog-container {
+  position: relative;
+}
+.blog-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.blog-container::after {
+  content: ""; /* cái phần content này rất quan trọng để nó có thể hiện cái hình ra */
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-image: url(../img/Avatar.png);
+  bottom: 365px;
+  right: 10px;
+}
+.blog-passage-heading {
+  display: flex;
+  gap: 16px;
+}
+.blog-passage {
+  display: block;
+  padding: 24px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.blog-passage-middle1 h1 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  padding-top: 20px;
+}
+.blog-passage-middle2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5f6d7e;
+  padding-top: 16px;
+}
+/* For mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 600px;
+    padding: 0 10px;
+  }
+  .header ul {
+    display: none;
+  }
+  .button-bars {
+    display: inline-block;
+  }
+}
+/* iPads and Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 0 10px;
+  }
+  .header ul {
+    display: none;
+  }
+  .button-bars {
+    display: inline-block;
+  }
+}
+/* laptops and small screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+  .button-signup {
+    margin-right: 10px;
+  }
+  .header-left {
+    gap: 10px;
+  }
+  .button-bars {
+    display: none;
+  }
+}
+/* large Screens and Desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .button-bars {
+    display: none;
+  }
+}
+/* TV and Extra Large Screens  */
+@media screen and (min-width: 1201px) {
+  .button-bars {
+    display: none;
+  }
+}
